@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('~/app/features/favorites/favorites.module').then((m) => m.FavoritesModule),
   },
   {
+    path: 'settings',
+    loadChildren: () => import('~/app/features/settings/settings.module').then((m) => m.SettingsModule),
+  },
+  {
     path: 'about',
     loadChildren: () => import('~/app/features/about/about.module').then((m) => m.AboutModule),
   },

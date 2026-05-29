@@ -33,11 +33,10 @@
 
         <StackLayout class="favorite-icon-container" width="50">
           <Label
-            [text]="pet.favorite ? '&#xf004;' : '&#xf06e;'"
+            [text]="isFavorite(pet.id) ? '&#xf004;' : '&#xf06e;'"
             class="favorite-icon fas"
-            [class.favorite-active]="pet.favorite"
-            nsDoubleTap
-            (doubleTap)="pet.favorite = !pet.favorite"
+            [class.favorite-active]="isFavorite(pet.id)"
+            (tap)="onToggleFavorite(pet)"
           ></Label>
         </StackLayout>
       </FlexboxLayout>

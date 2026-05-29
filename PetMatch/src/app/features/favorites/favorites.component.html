@@ -11,13 +11,17 @@
 
       <GridLayout
         *ngFor="let pet of favoritePets"
-        columns="auto, *"
+        columns="auto, *, auto"
         class="favorite-card"
       >
         <Image col="0" [src]="pet.image" class="favorite-image"></Image>
         <StackLayout col="1" class="favorite-details">
           <Label [text]="pet.name" class="pet-name"></Label>
           <Label [text]="pet.type + ' • ' + pet.breed" class="pet-subtitle"></Label>
+        </StackLayout>
+        <StackLayout col="2" class="actions-container">
+          <Button text="Leer" class="btn-read" (tap)="onReadNow(pet)"></Button>
+          <Label text="✕" class="btn-remove" (tap)="removeFavorite(pet.id)"></Label>
         </StackLayout>
       </GridLayout>
     </StackLayout>

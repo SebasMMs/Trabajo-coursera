@@ -1,30 +1,3 @@
-.page-shell {
-  padding: 12;
-}
-
-.favorites-list {
-  margin-top: 12;
-  spacing: 10;
-}
-
-.favorite-card {
-  margin: 8 0;
-  padding: 12;
-  border-radius: 14;
-  background-color: #fff7e6;
-}
-
-.favorite-image {
-  width: 88;
-  height: 88;
-  border-radius: 12;
-}
-
-.favorite-details {
-  margin-left: 12;
-  vertical-align: center;
-}
-
 .pet-name {
   font-size: 19;
   font-weight: bold;
@@ -40,4 +13,27 @@
   text-align: center;
   color: #7a7a7a;
   margin-top: 20;
+}
+
+.actions-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8;
+}
+
+.btn-read {
+  background-color: #49bba6;
+  color: #ffffff;
+  padding: 6 10;
+  border-radius: 6;
+  font-size: 12;
+  font-weight: bold;
+  margin-bottom: 6;
+}
+
+.btn-remove {
+  font-size: 20;
+  color: #ff6b6b;
+  font-weight: bold;
 }

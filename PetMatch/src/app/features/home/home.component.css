@@ -4,14 +4,64 @@
   justify-content: center;
 }
 
-.page__content-icon {
-  font-size: 72;
-  color: #3b80ff;
-  margin-bottom: 18;
+.home-section {
+  margin-top: 20;
+  padding: 12;
+  background-color: #f9f9f9;
+  border-radius: 12;
 }
 
-.page__content-placeholder {
+.section-title {
   font-size: 18;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 12;
+}
+
+.read-later-list {
+  height: 300;
+}
+
+.read-item-card {
+  padding: 12;
+  margin: 8 0;
+  background-color: #ffffff;
+  border-radius: 10;
+  border-width: 1;
+  border-color: #eeeeee;
+}
+
+.read-item-image {
+  width: 70;
+  height: 70;
+  border-radius: 8;
+}
+
+.read-item-info {
+  flex-direction: column;
+}
+
+.read-item-name {
+  font-size: 16;
+  font-weight: bold;
+  color: #333333;
+}
+
+.read-item-breed {
+  font-size: 13;
   color: #666666;
+  margin-top: 2;
+}
+
+.read-item-age {
+  font-size: 12;
+  color: #999999;
+  margin-top: 2;
+}
+
+.empty-message {
   text-align: center;
+  color: #999999;
+  font-size: 14;
+  margin-top: 20;
 }

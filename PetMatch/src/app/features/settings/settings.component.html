@@ -1,0 +1,58 @@
+<StackLayout class="page-shell settings-page">
+  <ns-page-title title="Configuración"></ns-page-title>
+
+  <ScrollView class="settings-content">
+    <StackLayout spacing="16" padding="12">
+      <!-- Username Section -->
+      <StackLayout class="setting-section">
+        <Label text="Nombre de Usuario" class="section-title"></Label>
+        <StackLayout *ngIf="!editingUsername" class="setting-display">
+          <Label [text]="username" class="setting-value"></Label>
+          <Button text="Editar" class="btn-edit" (tap)="onEditUsername()"></Button>
+        </StackLayout>
+
+        <StackLayout *ngIf="editingUsername" class="setting-edit">
+          <TextField
+            [(ngModel)]="username"
+            placeholder="Ingresa tu nombre"
+            class="text-input"
+          ></TextField>
+          <GridLayout columns="*, *" columnSpacing="8">
+            <Button col="0" text="Guardar" class="btn-save" (tap)="onSaveUsername()"></Button>
+            <Button col="1" text="Cancelar" class="btn-cancel" (tap)="onCancel()"></Button>
+          </GridLayout>
+        </StackLayout>
+      </StackLayout>
+
+      <!-- Ngrok URL Section -->
+      <StackLayout class="setting-section">
+        <Label text="URL del Servidor (Ngrok)" class="section-title"></Label>
+        <StackLayout *ngIf="!editingUrl" class="setting-display">
+          <Label [text]="ngrokUrl" class="setting-value setting-value-small"></Label>
+          <Button text="Editar" class="btn-edit" (tap)="onEditUrl()"></Button>
+        </StackLayout>
+
+        <StackLayout *ngIf="editingUrl" class="setting-edit">
+          <TextField
+            [(ngModel)]="ngrokUrl"
+            placeholder="https://xxxxx.ngrok.io"
+            class="text-input"
+          ></TextField>
+          <GridLayout columns="*, *" columnSpacing="8">
+            <Button col="0" text="Guardar" class="btn-save" (tap)="onSaveUrl()"></Button>
+            <Button col="1" text="Cancelar" class="btn-cancel" (tap)="onCancel()"></Button>
+          </GridLayout>
+        </StackLayout>
+      </StackLayout>
+
+      <!-- Info Section -->
+      <StackLayout class="info-box">
+        <Label
+          text="💡 Para usar la API, ejecuta el servidor Express en la carpeta /server y expón con Ngrok"
+          class="info-text"
+          textWrap="true"
+        ></Label>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</StackLayout>

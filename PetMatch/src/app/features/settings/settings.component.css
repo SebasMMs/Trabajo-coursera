@@ -1,0 +1,93 @@
+.page-shell {
+  padding: 12;
+}
+
+.settings-content {
+  margin-top: 12;
+}
+
+.setting-section {
+  padding: 16;
+  background-color: #ffffff;
+  border-radius: 12;
+  margin-bottom: 12;
+}
+
+.section-title {
+  font-size: 16;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 12;
+}
+
+.setting-display {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-value {
+  font-size: 15;
+  color: #666666;
+  flex: 1;
+}
+
+.setting-value-small {
+  font-size: 13;
+  word-wrap: break-word;
+}
+
+.btn-edit {
+  background-color: #58b8ff;
+  color: #ffffff;
+  padding: 8 12;
+  border-radius: 6;
+  font-size: 13;
+  font-weight: bold;
+  width: 80;
+}
+
+.setting-edit {
+  flex-direction: column;
+  spacing: 8;
+}
+
+.text-input {
+  border-width: 1;
+  border-color: #dddddd;
+  border-radius: 8;
+  padding: 12;
+  font-size: 14;
+  margin-bottom: 12;
+}
+
+.btn-save {
+  background-color: #49bba6;
+  color: #ffffff;
+  padding: 10 16;
+  border-radius: 6;
+  font-size: 14;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  background-color: #cccccc;
+  color: #ffffff;
+  padding: 10 16;
+  border-radius: 6;
+  font-size: 14;
+  font-weight: bold;
+}
+
+.info-box {
+  padding: 12;
+  background-color: #f0f8ff;
+  border-radius: 10;
+  border-width: 1;
+  border-color: #58b8ff;
+}
+
+.info-text {
+  font-size: 13;
+  color: #0066cc;
+}

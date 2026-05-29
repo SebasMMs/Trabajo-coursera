@@ -1,0 +1,25 @@
+<StackLayout class="page-shell">
+  <ns-page-title title="Favoritos"></ns-page-title>
+
+  <ScrollView>
+    <StackLayout class="favorites-list">
+      <Label
+        *ngIf="favoritePets.length === 0"
+        text="No hay mascotas marcadas como favoritas aún."
+        class="empty-text"
+      ></Label>
+
+      <GridLayout
+        *ngFor="let pet of favoritePets"
+        columns="auto, *"
+        class="favorite-card"
+      >
+        <Image col="0" [src]="pet.image" class="favorite-image"></Image>
+        <StackLayout col="1" class="favorite-details">
+          <Label [text]="pet.name" class="pet-name"></Label>
+          <Label [text]="pet.type + ' • ' + pet.breed" class="pet-subtitle"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</StackLayout>

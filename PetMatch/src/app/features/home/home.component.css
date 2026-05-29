@@ -1,0 +1,17 @@
+.page__content {
+  margin: 24 16;
+  vertical-align: center;
+  justify-content: center;
+}
+
+.page__content-icon {
+  font-size: 72;
+  color: #3b80ff;
+  margin-bottom: 18;
+}
+
+.page__content-placeholder {
+  font-size: 18;
+  color: #666666;
+  text-align: center;
+}

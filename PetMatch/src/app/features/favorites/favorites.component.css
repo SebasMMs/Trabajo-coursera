@@ -1,0 +1,43 @@
+.page-shell {
+  padding: 12;
+}
+
+.favorites-list {
+  margin-top: 12;
+  spacing: 10;
+}
+
+.favorite-card {
+  margin: 8 0;
+  padding: 12;
+  border-radius: 14;
+  background-color: #fff7e6;
+}
+
+.favorite-image {
+  width: 88;
+  height: 88;
+  border-radius: 12;
+}
+
+.favorite-details {
+  margin-left: 12;
+  vertical-align: center;
+}
+
+.pet-name {
+  font-size: 19;
+  font-weight: bold;
+}
+
+.pet-subtitle {
+  color: #666666;
+  font-size: 13;
+  margin-top: 4;
+}
+
+.empty-text {
+  text-align: center;
+  color: #7a7a7a;
+  margin-top: 20;
+}

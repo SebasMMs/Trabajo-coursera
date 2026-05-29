@@ -1,0 +1,12 @@
+<ActionBar class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <GridLayout columns="50, *">
+    <Label class="action-bar-title" text="PetMatch" colSpan="2"></Label>
+    <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+  </GridLayout>
+</ActionBar>
+
+<StackLayout class="page__content">
+  <ns-page-title title="Bienvenido a PetMatch"></ns-page-title>
+  <Label class="page__content-description" text="Explora mascotas, guarda tus favoritas y conoce la app." textWrap="true"></Label>
+</StackLayout>

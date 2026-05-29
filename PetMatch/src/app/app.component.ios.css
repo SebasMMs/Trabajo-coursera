@@ -1,0 +1,11 @@
+.nt-drawer__header {
+  background-color: #49bba6;
+}
+
+.nt-drawer__list-item.-selected {
+  background-color: #cdece6;
+}
+
+.page-title {
+  background-color: #49bba6;
+}

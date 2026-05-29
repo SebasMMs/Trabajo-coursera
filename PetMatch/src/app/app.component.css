@@ -1,0 +1,29 @@
+.nt-drawer__header {
+  padding: 24 18;
+}
+
+.nt-drawer__header-brand {
+  font-size: 22;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nt-drawer__header-footnote {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nt-drawer__list-item {
+  padding: 14 18;
+}
+
+.nt-drawer__list-item.-selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.nt-icon {
+  margin-right: 12;
+}
+
+.page-title {
+  margin-top: 0;
+}

@@ -1,0 +1,20 @@
+<StackLayout class="page-shell">
+  <ns-page-title title="Pets disponibles"></ns-page-title>
+
+  <ScrollView>
+    <StackLayout class="pets-list">
+      <GridLayout
+        *ngFor="let pet of pets"
+        columns="auto, *"
+        class="pet-card"
+      >
+        <Image col="0" [src]="pet.image" class="pet-image"></Image>
+        <StackLayout col="1" class="pet-details">
+          <Label [text]="pet.name" class="pet-name"></Label>
+          <Label [text]="pet.type + ' • ' + pet.breed" class="pet-subtitle"></Label>
+          <Label [text]="pet.age" class="pet-age"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</StackLayout>

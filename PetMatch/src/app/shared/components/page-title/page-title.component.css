@@ -1,0 +1,12 @@
+.page-title {
+  margin: 20 16;
+  padding: 16;
+  background-color: #58b8ff;
+  border-radius: 12;
+}
+
+.page-title__text {
+  color: #ffffff;
+  font-size: 22;
+  font-weight: bold;
+}

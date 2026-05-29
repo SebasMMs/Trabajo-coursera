@@ -10,7 +10,6 @@
     "skipLibCheck": true,
     "lib": ["ESNext", "dom"],
     "baseUrl": ".",
-    "ignoreDeprecations": "6.0",
     "paths": {
       "~/*": ["src/*"],
       "@/*": ["src/*"]

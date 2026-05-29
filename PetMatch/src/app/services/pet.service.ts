@@ -35,11 +35,40 @@ export class PetService {
     },
   ]
 
+  private petNames = ['Max', 'Bella', 'Rocky', 'Charlie', 'Daisy', 'Buddy', 'Lucy', 'Leo']
+  private petTypes = ['Dog', 'Cat', 'Rabbit', 'Bird', 'Hamster']
+  private petBreeds = ['Labrador', 'Golden', 'Siamés', 'Mini Lop', 'Persa', 'Beagle', 'Bulldog', 'Caniche']
+
   getPets(): Pet[] {
     return this.pets
   }
 
   getFavorites(): Pet[] {
     return this.pets.filter((pet) => pet.favorite)
+  }
+
+  getRandomPets(count: number): Pet[] {
+    const newPets: Pet[] = []
+    for (let i = 0; i < count; i++) {
+      const id = Math.max(...this.pets.map((p) => p.id)) + 1
+      const randomName = this.petNames[Math.floor(Math.random() * this.petNames.length)]
+      const randomType = this.petTypes[Math.floor(Math.random() * this.petTypes.length)]
+      const randomBreed = this.petBreeds[Math.floor(Math.random() * this.petBreeds.length)]
+
+      newPets.push({
+        id,
+        name: `${randomName}`,
+        type: randomType,
+        age: `${Math.floor(Math.random() * 10) + 1} años`,
+        breed: randomBreed,
+        image:
+          'https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=600',
+        favorite: false,
+      })
+
+      this.pets.push(newPets[i])
+    }
+
+    return newPets
   }
 }

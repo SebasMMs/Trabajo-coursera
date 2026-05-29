@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('~/app/features/pets/pets.module').then((m) => m.PetsModule),
   },
   {
+    path: 'search',
+    loadChildren: () => import('~/app/features/search/search.module').then((m) => m.SearchModule),
+  },
+  {
     path: 'favorites',
     loadChildren: () => import('~/app/features/favorites/favorites.module').then((m) => m.FavoritesModule),
   },

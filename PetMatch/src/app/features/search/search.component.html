@@ -1,0 +1,53 @@
+<StackLayout class="page-shell search-page">
+  <ns-page-title title="Buscar Mascotas"></ns-page-title>
+
+  <StackLayout class="search-box">
+    <TextField
+      [(ngModel)]="searchQuery"
+      (textChange)="onSearchChange()"
+      hint="Buscar por nombre o raza..."
+      class="search-input"
+      nsMinLength
+    ></TextField>
+  </StackLayout>
+
+  <ListView [items]="filteredPets" class="pets-listview">
+    <ng-template nsTemplateKey="default" let-pet="item">
+      <FlexboxLayout
+        class="pet-item-flex"
+        flexDirection="row"
+        justifyContent="space-between"
+        alignItems="center"
+        (tap)="onPetTap(pet)"
+        (nsLongPress)="onPetLongPress(pet)"
+      >
+        <StackLayout class="pet-image-container" width="100">
+          <Image [src]="pet.image" class="pet-item-image"></Image>
+        </StackLayout>
+
+        <FlexboxLayout class="pet-info-flex" flexDirection="column" flex="1" paddingLeft="12">
+          <Label [text]="pet.name" class="pet-item-name"></Label>
+          <Label [text]="pet.type + ' • ' + pet.age" class="pet-item-subtitle"></Label>
+          <Label [text]="pet.breed" class="pet-item-breed"></Label>
+        </FlexboxLayout>
+
+        <StackLayout class="favorite-icon-container" width="50">
+          <Label
+            [text]="pet.favorite ? '&#xf004;' : '&#xf06e;'"
+            class="favorite-icon fas"
+            [class.favorite-active]="pet.favorite"
+            nsDoubleTap
+            (doubleTap)="pet.favorite = !pet.favorite"
+          ></Label>
+        </StackLayout>
+      </FlexboxLayout>
+    </ng-template>
+  </ListView>
+
+  <Label
+    *ngIf="filteredPets.length === 0"
+    text="No se encontraron mascotas."
+    class="no-results"
+    textWrap="true"
+  ></Label>
+</StackLayout>

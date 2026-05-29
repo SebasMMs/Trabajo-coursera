@@ -1,0 +1,36 @@
+<StackLayout class="detail-page">
+  <StackLayout class="detail-header">
+    <Label text="&#xf060;" class="back-icon fas" (tap)="onGoBack()"></Label>
+    <Label [text]="pet?.name" class="detail-title"></Label>
+  </StackLayout>
+
+  <ScrollView class="detail-content">
+    <StackLayout>
+      <Image [src]="pet?.image" class="detail-image"></Image>
+
+      <StackLayout class="detail-info">
+        <Label [text]="'Tipo: ' + pet?.type" class="info-label"></Label>
+        <Label [text]="'Raza: ' + pet?.breed" class="info-label"></Label>
+        <Label [text]="'Edad: ' + pet?.age" class="info-label"></Label>
+      </StackLayout>
+
+      <StackLayout class="action-buttons">
+        <Button
+          [text]="pet?.favorite ? '♥ Favorito' : '♡ Agregar a Favoritos'"
+          class="btn-primary"
+          (tap)="onToggleFavorite()"
+        ></Button>
+      </StackLayout>
+
+      <StackLayout class="notes-section">
+        <Label text="Mis Notas" class="notes-title"></Label>
+        <TextView
+          [(ngModel)]="notes"
+          hint="Escribe aquí tus observaciones sobre esta mascota..."
+          class="notes-input"
+        ></TextView>
+        <Button text="Guardar Notas" class="btn-secondary" (tap)="onSaveNotes()"></Button>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</StackLayout>

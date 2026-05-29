@@ -1,0 +1,97 @@
+.page-shell {
+  padding: 12;
+}
+
+.search-box {
+  margin-bottom: 12;
+  padding: 8 12;
+  background-color: #f5f5f5;
+  border-radius: 12;
+}
+
+.search-input {
+  padding: 12;
+  border-radius: 8;
+  background-color: #ffffff;
+  font-size: 15;
+}
+
+.pets-listview {
+  margin-top: 12;
+}
+
+.pet-item-flex {
+  padding: 12;
+  margin: 8 0;
+  background-color: #ffffff;
+  border-radius: 12;
+  box-shadow: 0 2 4 rgba(0, 0, 0, 0.1);
+}
+
+.pet-image-container {
+  align-self: center;
+}
+
+.pet-item-image {
+  width: 100;
+  height: 100;
+  border-radius: 10;
+}
+
+.pet-info-flex {
+  padding-left: 12;
+}
+
+.pet-item-name {
+  font-size: 18;
+  font-weight: bold;
+  color: #333333;
+}
+
+.pet-item-subtitle {
+  font-size: 13;
+  color: #888888;
+  margin-top: 4;
+}
+
+.pet-item-breed {
+  font-size: 12;
+  color: #aaaaaa;
+  margin-top: 4;
+}
+
+.favorite-icon-container {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-icon {
+  font-size: 28;
+  color: #cccccc;
+  animation: rotate 0.3s ease-in-out;
+}
+
+.favorite-icon.favorite-active {
+  color: #ff6b6b;
+  animation: rotate 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.no-results {
+  margin-top: 40;
+  text-align: center;
+  color: #999999;
+  font-size: 16;
+}

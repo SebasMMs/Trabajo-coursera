@@ -1,0 +1,94 @@
+.detail-page {
+  background-color: #f9f9f9;
+}
+
+.detail-header {
+  background-color: #49bba6;
+  padding: 12;
+  margin-bottom: 12;
+  flex-direction: row;
+  align-items: center;
+}
+
+.back-icon {
+  color: #ffffff;
+  font-size: 24;
+  margin-right: 12;
+}
+
+.detail-title {
+  color: #ffffff;
+  font-size: 22;
+  font-weight: bold;
+  flex: 1;
+}
+
+.detail-content {
+  padding: 12;
+}
+
+.detail-image {
+  width: 100%;
+  height: 250;
+  border-radius: 16;
+  margin-bottom: 16;
+}
+
+.detail-info {
+  background-color: #ffffff;
+  padding: 16;
+  border-radius: 12;
+  margin-bottom: 16;
+}
+
+.info-label {
+  font-size: 15;
+  color: #333333;
+  margin-bottom: 8;
+}
+
+.action-buttons {
+  margin-bottom: 16;
+}
+
+.btn-primary {
+  background-color: #49bba6;
+  color: #ffffff;
+  padding: 12 16;
+  border-radius: 12;
+  font-size: 16;
+  font-weight: bold;
+}
+
+.notes-section {
+  background-color: #ffffff;
+  padding: 16;
+  border-radius: 12;
+  margin-bottom: 24;
+}
+
+.notes-title {
+  font-size: 18;
+  font-weight: bold;
+  margin-bottom: 12;
+  color: #333333;
+}
+
+.notes-input {
+  border-width: 1;
+  border-color: #dddddd;
+  border-radius: 8;
+  padding: 12;
+  font-size: 14;
+  height: 120;
+  margin-bottom: 12;
+}
+
+.btn-secondary {
+  background-color: #58b8ff;
+  color: #ffffff;
+  padding: 12 16;
+  border-radius: 12;
+  font-size: 15;
+  font-weight: bold;
+}
